@@ -35,7 +35,7 @@
 
 - Kernel has I/O subsystem to mediate between device controller and kernel
 
-  - ![lect30-kernel_io_system](C:/Users/Richard%20Cao/Documents/2B%20Term/ECE254/Notes/Graphics/lect30-kernel_io_system.PNG)
+  - ![lect30-kernel_io_system](./Graphics/lect30-kernel_io_system.PNG)
 
 - Escape system (aka. escape sequence)
 
