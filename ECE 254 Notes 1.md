@@ -144,7 +144,7 @@ int bar ( bag* i, int val) {...}
   3. Processor
   4. I/O (optional but program generally not useful otherwise)
 
-![Computer Organization](.\Graphics\lect2-computer_organization.PNG)
+![Computer Organization](Graphics\lect2-computer_organization.PNG)
 
 
 
