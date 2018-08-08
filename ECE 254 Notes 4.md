@@ -147,7 +147,7 @@ Accounting Data of Processes (used in scheduling):
        - Running processes that become blocked goes into I/O queue
        - When processes get unblocked, they join auxiliary queue, which has higher priority than normal queue
        - After running up to time limit `l`, it goes back to normal queue
-       - ![lect26-virtual_round_robin](.\Graphics\lect26-virtual_round_robin.PNG)
+       - ![lect26-virtual_round_robin](./Graphics/lect26-virtual_round_robin.PNG)
 4. <u>Shortest Process Next</u>
    - Shortest expected execution time gets highest priority
    - Downside: No one knows exactly how long a process will take
@@ -157,9 +157,9 @@ Accounting Data of Processes (used in scheduling):
    - FIFO can tie-break
    - Equation: (next CPU burst is weighted average of all previous burst times)
      - `S1` = 0 (first guess is 0, allowing new processes to at least start)
-     - Equation: ![lect26-shortest_job_first_eq1](.\Graphics\lect26-shortest_job_first_eq1.PNG)
-     - Modified equation using previous estimate: ![lect26-shortest_job_first_eq2](.\Graphics\lect26-shortest_job_first_eq2.PNG)
-     - Modified eq. weighing most recent bursts more heavily:![lect26-shortest_job_first_besteq](.\Graphics\lect26-shortest_job_first_besteq.PNG)
+     - Equation: ![lect26-shortest_job_first_eq1](./Graphics/lect26-shortest_job_first_eq1.PNG)
+     - Modified equation using previous estimate: ![lect26-shortest_job_first_eq2](./Graphics/lect26-shortest_job_first_eq2.PNG)
+     - Modified eq. weighing most recent bursts more heavily:![lect26-shortest_job_first_besteq](./Graphics/lect26-shortest_job_first_besteq.PNG)
        - Greater alpha means more weighting, and usually better estimates
    - Pros
      - Best minimum average waiting time
@@ -268,7 +268,7 @@ Higher interactions between processes == "finer-grained" == more careful
 - Solution: <u>Hyperthreading</u> - assign two threads to a core and switch threads if one had memory stall
   - Only if threads are closely intertwined (fine-grained multithreading vs coarse-grained multithreading) as switching coarse-grained threads is very expensive
 
-![lect27-hyperthreading](.\Graphics\lect27-hyperthreading.PNG)
+![lect27-hyperthreading](./Graphics/lect27-hyperthreading.PNG)
 
 
 
@@ -311,7 +311,7 @@ Say a periodic task has:
 
 If `U > 1` in the equation below, then the total completion time of all tasks is greater than the time allotted for all the task, meaning the system is overloaded
 
-![lect28-periodic_task_eq](.\Graphics\lect28-periodic_task_eq.PNG)
+![lect28-periodic_task_eq](./Graphics/lect28-periodic_task_eq.PNG)
 
 
 
@@ -346,7 +346,7 @@ If `U > 1` in the equation below, then the total completion time of all tasks is
 
 <u>Priority Formula</u>
 
-![lect28-UNIX_priority_formula](.\Graphics\lect28-UNIX_priority_formula.PNG)
+![lect28-UNIX_priority_formula](./Graphics/lect28-UNIX_priority_formula.PNG)
 
 - Priority of process `j` at time `i`
 - B is base priority of process
@@ -354,7 +354,7 @@ If `U > 1` in the equation below, then the total completion time of all tasks is
   - Users can increase the value to reduce priority of the process
 - CPU is processor utilization
   - Clearly, the longer a process has ran, the lower the CPU (means higher priority)
-  - ![lect28-UNIX_CPU_util_formula](.\Graphics\lect28-UNIX_CPU_util_formula.PNG)
+  - ![lect28-UNIX_CPU_util_formula](./Graphics/lect28-UNIX_CPU_util_formula.PNG)
 - CPU and N are limited values. They have to stay within their priority class
 
 
@@ -405,7 +405,7 @@ If `U > 1` in the equation below, then the total completion time of all tasks is
 
 <u>Relative Priority</u>
 
-- ![lect28-windows_relative_priorities](.\Graphics\lect28-windows_relative_priorities.PNG)
+- ![lect28-windows_relative_priorities](./Graphics/lect28-windows_relative_priorities.PNG)
 - For processes that aren't real-time:
   - The relative priority is lowered:
     - if a process takes longer than its time slice
@@ -554,7 +554,7 @@ struct prio_array {
 
   - There are 32 cores and 4 groups
 
-  - ![lect28-scheduling_domain](.\Graphics\lect28-scheduling_domain.PNG)
+  - ![lect28-scheduling_domain](./Graphics/lect28-scheduling_domain.PNG)
 
   - In each scheduling domain, there is a designated core to load balance (either the lowest numbered idle core or if all cores are busy, the lowest-numbered core)
 
