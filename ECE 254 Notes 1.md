@@ -144,7 +144,7 @@ int bar ( bag* i, int val) {...}
   3. Processor
   4. I/O (optional but program generally not useful otherwise)
 
-![Computer Organization](Graphics\lect2-computer_organization.PNG)
+![Computer Organization](./Graphics/lect2-computer_organization.PNG)
 
 
 
@@ -204,7 +204,7 @@ Since we can't have everything, there are different levels:
 
 - Sequential vs nested interrupts
 
-  ![Computer Organization](.\Graphics\lect2-interrupt_types.PNG)
+  ![Computer Organization](./Graphics/lect2-interrupt_types.PNG)
 
 - Sources:
 
@@ -244,7 +244,7 @@ Since we can't have everything, there are different levels:
 
 - <u>Services</u>
 
-  ![lect3-os_structure](.\Graphics\lect3-os_structure.PNG)
+  ![lect3-os_structure](./Graphics/lect3-os_structure.PNG)
 
   1. <u>User Interface</u> - GUI (Windows desktop), batch interface (commands in files that periodically run), command line interface (CLI)
   2. <u>System Calls</u> - functions that can be called from user level that initiates OS functions
@@ -277,7 +277,7 @@ Since we can't have everything, there are different levels:
 - Performance impact but is good tradeoff for security
   - prevents two programs from modifying 1 file at same time
 
-![lect3-modes](.\Graphics\lect3-modes.PNG)
+![lect3-modes](./Graphics/lect3-modes.PNG)
 
 **Example: Reading from Disks**
 
@@ -325,7 +325,7 @@ Since we can't have everything, there are different levels:
 
 - maximize time between saving 1 state and reloading another
 
-![lect4-process_switching](.\Graphics\lect4-process_switching.PNG)
+![lect4-process_switching](./Graphics/lect4-process_switching.PNG)
 
 **Process Cycle**
 
@@ -397,7 +397,7 @@ Since we can't have everything, there are different levels:
 
 **Two State Model**
 
-![lect5-two_state](.\Graphics\lect5-two_state.PNG)
+![lect5-two_state](./Graphics/lect5-two_state.PNG)
 
 States:
 
@@ -413,7 +413,7 @@ Transitions
 
 **Three State Model**
 
-![lect5-three_state](.\Graphics\lect5-three_state.PNG)
+![lect5-three_state](./Graphics/lect5-three_state.PNG)
 
 New States
 
@@ -427,7 +427,7 @@ New Transitions
 
 **Five State Model**
 
-![lect5-five_state](.\Graphics\lect5-five_state.PNG)
+![lect5-five_state](./Graphics/lect5-five_state.PNG)
 
 New States
 
@@ -451,7 +451,7 @@ Problem - Memory Issues
 
 - **Solution:** put programs on disk
 
-![lect5-seven_state](C:\Users\Richard Cao\Documents\2B Term\ECE 254\Notes\Graphics\lect5-seven_state.PNG)
+![lect5-seven_state](./Graphics/lect5-seven_state.PNG)
 
 New State
 
@@ -476,7 +476,7 @@ New Transitions
 - Process ID = pid
   - `init` has pid of 1
 
-![lect6-unix_process_tree](.\Graphics\lect6-unix_process_tree.PNG)
+![lect6-unix_process_tree](./Graphics/lect6-unix_process_tree.PNG)
 
 
 
@@ -521,7 +521,7 @@ New Transitions
 
 **9 Unix States**
 
-![lect6-unix_process_states](.\Graphics\lect6-unix_process_states.PNG)
+![lect6-unix_process_states](./Graphics/lect6-unix_process_states.PNG)
 
 1. User Running
 2. Kernel Running
@@ -652,7 +652,7 @@ UNIX Command Line: `cat fork.c | less `
 - processes can have 1 or more threads
 - short term for 'Thread of Execution'
 
-![lect8-threads](.\Graphics\lect8-threads.PNG)
+![lect8-threads](./Graphics/lect8-threads.PNG)
 
 **Possessions**
 
@@ -662,7 +662,7 @@ UNIX Command Line: `cat fork.c | less `
 4. Local Variables
 5. Access to process memory and resources (shared between all threads)
 
-![lect8-thread_items](.\Graphics\lect8-thread_items.PNG)
+![lect8-thread_items](./Graphics/lect8-thread_items.PNG)
 
 Example: UI Thread
 
@@ -695,7 +695,7 @@ Cons:
 - No 'Swapped' states because entire process would be swapped
 - termination of process means all threads goes to "terminated" state
 
-5-State Model:![lect8-thread_states](.\Graphics\lect8-thread_states.PNG)
+5-State Model:![lect8-thread_states](./Graphics/lect8-thread_states.PNG)
 
 **Thread Cancellation**
 
@@ -837,7 +837,7 @@ Examples:
 3. Processors are able to perform the same functions
 4. System is controlled by OS
 
-![lect10-cpus](.\Graphics\lect10-cpus.PNG)
+![lect10-cpus](./Graphics/lect10-cpus.PNG)
 
 
 
@@ -864,7 +864,7 @@ Note: Core = 1 logical processing unit and CPU refers to a physical chip with 1+
 
 - Equation:
 
-  ![lect10-speedup_equation](.\Graphics\lect10-speedup_equation.PNG)
+  ![lect10-speedup_equation](./Graphics/lect10-speedup_equation.PNG)
 
 - As N -> infinity, clearly the speedup is 1/S
 
