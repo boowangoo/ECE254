@@ -92,7 +92,7 @@
 
 - Kernel must keep track of the state of I/O devices and which processes are using them
 - FYI only
-  - ![lect30-UNIX_io_info](.\Graphics\lect30-UNIX_io_info.PNG)
+  - ![lect30-UNIX_io_info](./Graphics/lect30-UNIX_io_info.PNG)
 
 **I/O Scheduling**
 
@@ -106,7 +106,7 @@
 
 <u>I/O Request Life Cycle</u>
 
-![lect30-io_request-lifecycle](.\Graphics\lect30-io_request-lifecycle.PNG)
+![lect30-io_request-lifecycle](./Graphics/lect30-io_request-lifecycle.PNG)
 
 <u>Steps (in written form)</u>
 
@@ -141,7 +141,7 @@
      - <u>Seek-Time</u>: moving the arm to right position
      - <u>Rotational Latency</u>: time for disk to rotate to right position
 - Total Average Access Time: - **REVIEW SLIDES for equation**
-  - ![lect31-disk_access_time](.\Graphics\lect31-disk_access_time.PNG)
+  - ![lect31-disk_access_time](./Graphics/lect31-disk_access_time.PNG)
     - `Ts` is average seek time
     - `r` is rotation speed
     - `b` is number of bytes to transfer
@@ -449,7 +449,7 @@ File locks may be exclusive or non-exclusive
 5. Buffers
    - location of buffers for read/write operations
 
-![lect32-disk_operations](.\Graphics\lect32-disk_operations.PNG)
+![lect32-disk_operations](./Graphics/lect32-disk_operations.PNG)
 
 
 
@@ -530,7 +530,7 @@ Each object has defined operations (read, write, open, flush, release)
 - File occupies continuous blocks
   - Given a file with size `n` blocks and starts at block `b`, then file takes up from block `b` to `b + (n - 1)`
 - File system keeps track of `b` and `n`
-  - ![lect34-contiguous_allocation](.\Graphics\lect34-contiguous_allocation.PNG)
+  - ![lect34-contiguous_allocation](./Graphics/lect34-contiguous_allocation.PNG)
 - Pros:
   - Keeps seek time to nonexistent
   - Sequential and direct access is easy
@@ -548,7 +548,7 @@ Each object has defined operations (read, write, open, flush, release)
 
 - Each block has pointers to prev and next blocks
 - Directory listing keeps track of head and tail
-  - ![lect34-linked_allocation](.\Graphics\lect34-linked_allocation.PNG)
+  - ![lect34-linked_allocation](./Graphics/lect34-linked_allocation.PNG)
 - File Creation:
   - A new entry is created with size 0 and `head == null`, `tail == null`
 - Improvement: <u>Clusters</u> - group of blocks
@@ -570,7 +570,7 @@ Each object has defined operations (read, write, open, flush, release)
   - Each block has block number of next block or 0 if unused)
   - Last block has special value to indicate end-of-file
 - Block Allocation - Find first 0-valued entry and replace previous `tail` value to new address
-- ![lect34-FAT_allocation_system](.\Graphics\lect34-FAT_allocation_system.PNG)
+- ![lect34-FAT_allocation_system](./Graphics/lect34-FAT_allocation_system.PNG)
 - FAT should be cached (required quite often)
 
 
@@ -581,7 +581,7 @@ Each object has defined operations (read, write, open, flush, release)
   - Go to index `i` to go to block `i`
   - Pointers start as null
 
-![lect34-indexed_allocation](.\Graphics\lect34-indexed_allocation.PNG)
+![lect34-indexed_allocation](./Graphics/lect34-indexed_allocation.PNG)
 
 
 
@@ -598,7 +598,7 @@ Each object has defined operations (read, write, open, flush, release)
    - 13th pointer points to indirect block (an index block that points to data)
    - 14th pointer points to double indirect block (an index block that points to index blocks that points to data)
    - 15th pointer points to triple indirect block (self-explanatory) 
-   - ![lect34-UNIX_implementation](.\Graphics\lect34-UNIX_implementation.PNG)
+   - ![lect34-UNIX_implementation](./Graphics/lect34-UNIX_implementation.PNG)
 
 
 
