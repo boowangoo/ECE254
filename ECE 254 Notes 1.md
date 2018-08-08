@@ -116,7 +116,7 @@ int bar ( bag* i, int val) {...}
 
 <u>Operating System</u> - Programs that interfaces the machine with application programs (e.g. memory allocation)
 
-![modern_computer_diagram](.\Graphics\lect1-modern_computer.PNG)
+![modern_computer_diagram](./Graphics/lect1-modern_computer.PNG)
 
 - in other words, OS sits on top of hardware but underneath executing programs
 
