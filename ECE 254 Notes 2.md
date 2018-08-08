@@ -205,12 +205,12 @@ All 4 conditions must satisfy in order to get deadlock
 - arrows indicates a request for resource (pointing to resource) and holding a resource (pointing to process)
 - dots mean how many of that resource is available
 
-![lect14-resource_graph](.\Graphics\lect15-resource_graph.PNG)
+![lect14-resource_graph](./Graphics/lect15-resource_graph.PNG)
 
 - If a cycle exists, process **may** be deadlocked
   - below graph is not deadlocked because if P1 requests R1 and P3 is using 1/2 of the R1, it will be unblocked once P2 releases resources from R1
 
-![lect14-resource_graph](.\Graphics\lect15-graph_with_cycle.PNG)
+![lect14-resource_graph](./Graphics/lect15-graph_with_cycle.PNG)
 
 
 
@@ -285,7 +285,7 @@ Implemented by OS or application developer
 
   - from the joint process diagram, OS can determine that 2/6 paths will cause deadlocking so it avoids those paths
 
-  ![lect16-joint_progress_diag](.\Graphics\lect16-joint_progress_diag.PNG)
+  ![lect16-joint_progress_diag](./Graphics/lect16-joint_progress_diag.PNG)
 
 **Safe State**: When there is a scheduling order in which every process can run and finish
 
@@ -385,7 +385,7 @@ Cons:
   - `Rij` is the # of `Rj` requested by `Pi`
 - Note, `Sum of Cij + Aj = Ej`
 
-![lect17-General_Deadlock_Detection](.\Graphics\lect17-General_Deadlock_Detection.PNG)
+![lect17-General_Deadlock_Detection](./Graphics/lect17-General_Deadlock_Detection.PNG)
 
 <u>Algorithm Setup</u>
 
